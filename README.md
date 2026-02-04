@@ -1,11 +1,10 @@
 Oppgave 02. Create a neural network yourself, using the Keras API.
 
 from tensorflow import keras // importer keras via tensorflow
+
 from tensorflow.keras import layers
 
 input_shape = (28, 28, 1) // formen på et input bilde28*28 1 kanal
-
-//lagene kommer i en fast rekkefølge
 
 model = keras.Sequential( 
     [
@@ -20,6 +19,8 @@ model = keras.Sequential(
         layers.Dense(10, activation="softmax"),
     ]
 ) 
+
+//lagene kommer i en fast rekkefølge
 
 //først definere input laget. modellen skal få inn data med form (28, 28, 1)
 
