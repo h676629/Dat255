@@ -41,3 +41,8 @@ model = keras.Sequential(
 // Output laget 10 fordi MNIST har 10 klasser
 
 // softmax gjør output sannsynligheter som summerer til 1
+
+Exercise for 04:
+Decision boundary-plottene viser at modell 2 (ReLU + He-initialisering) presterer klart best. Den lærer en meningsfull separasjon av dataene, mens modell 1 forblir nær tilfeldig gjetting. Modell 2 kan gjøres mer stabil ved å justere learning rate, men modell 1 kan ikke oppnå tilsvarende ytelse kun ved å endre learning rate.
+
+Gradient-plottene viser at gradientene ikke er like i alle lag. Tidlige lag har større og mer variable gradienter enn de senere lagene, noe som er forventet. I modell 2 er gradientene tydelige i alle lag, uten tegn til vanishing gradients. Dette forklarer hvorfor modellen lærer effektivt. Spikes i gradientene indikerer at learning rate er relativt høy, men ikke så høy at treningen kollapser.
