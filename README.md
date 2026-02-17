@@ -77,3 +77,5 @@ The information becomes less visually clear for humans but more abstract and mea
 
 Can you relate the pixels in the final layer to the different number predictions?
 No, not directly. The final layer no longer represents individual pixels but high-level features that are combined by the dense layers to produce the final digit prediction.
+
+07resnet: Har lastet opp en kopi med ferdig kode. 
